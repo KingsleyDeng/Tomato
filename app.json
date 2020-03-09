@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ed8631",
+    "navigationBarTitleText": "番茄工作",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "设置"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
