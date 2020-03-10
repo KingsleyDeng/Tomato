@@ -6,13 +6,22 @@ const defaultLogName = {
   rest: '休息'
 }
 
+const actionName = {
+  stop : '停止',
+  start : '开始'
+}
+
 
 Page({
   data: {
+
     remainTimeText:'',
     timerType:'work',
     completed:false,
-    isRunning:false
+    isRunning:false,
+    log:{},
+    leftDeg : initDeg.left,
+    rightDeg : initDeg.right
 
   },
   
@@ -21,9 +30,10 @@ Page({
   },
 
   onShow:function(){
-    this.setData({
-      remainTimeText:'5:00'
-    })
+
+    if(this.data.isRunning) return
+    let workTime = util.
+
   },
 
   startTimer:function(e){
