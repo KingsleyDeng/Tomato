@@ -1,22 +1,23 @@
 var util = require('../../utils/util.js')
-
 Page({
   data: {
     logs: [],
     modalHidden: true,
     toastHidden: true
   },
-
-  onShow: function() {
+  onShow: function () {
     wx.setNavigationBarTitle({
-      title: '任务记录',
+      title: '任务记录'
     })
     this.getLogs()
   },
+  set: function () {
 
-  getLogs: function() {
+  },
+  getLogs: function () {
     let logs = wx.getStorageSync('logs')
-    logs.forEach(function(item, index, arry) {
+    logs.forEach(function (item, index, arry) {
+      console.log(item)
       item.startTime = new Date(item.startTime).toLocaleString()
     })
     this.setData({
@@ -24,21 +25,19 @@ Page({
     })
   },
 
-  onLoad: function() {
+  onLoad: function () { },
 
-  },
-
-  switchModal: function() {
+  switchModal: function () {
     this.setData({
       modalHidden: !this.data.modalHidden
     })
   },
-  hideToast: function() {
+  hideToast: function () {
     this.setData({
       toastHidden: true
     })
   },
-  clearLog: function(e) {
+  clearLog: function (e) {
     wx.setStorageSync('logs', [])
     this.switchModal()
     this.setData({

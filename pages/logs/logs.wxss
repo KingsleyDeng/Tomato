@@ -33,3 +33,21 @@
   width: 80%;
 }
 
+.nodata{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.nodata_img{
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+
+.nodata_text{
+	color:#dedede;
+	font-size: 12px;
+	padding-left: 10px;
+}

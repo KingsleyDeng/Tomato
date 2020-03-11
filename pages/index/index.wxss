@@ -176,7 +176,7 @@
 }
 
 .timer--runing .timer_ctrl {
-  background-color: #208DEA;
+  background-color: #ed8631;
   height: 30px;
   margin-bottom: 30px;
   border: 1px dashed #dedede;
